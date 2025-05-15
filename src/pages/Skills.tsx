@@ -14,18 +14,18 @@ import { SiBun } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import {motion} from 'framer-motion'
 
-const iconVariants = (duration) => ({
-  initial : {y:-10},
-  animate:{
-    y:[10,-10],
-    transition:
-    { duration,
-      ease:"linear",
-      repeat : Infinity,
-      repeatType: 'reverse'
-    },
+const iconVariants = (duration : any) => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
   },
-})
+  transition: {
+    duration,
+    ease: "linear",
+    repeat: Infinity,
+    repeatType: "reverse",
+  },
+});
 
 const Skills = () => {
   return (
