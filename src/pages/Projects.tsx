@@ -1,5 +1,5 @@
-import MERN_AI from "../assets/mern_ai.png"
-import ToDoList from "../assets/todolist.png"
+import MERN_AI from "../assets/MERN_AI.png"
+import ToDoList from "../assets/ToDoList.png"
 const Projects = () => {
   return (
     <div className="flex flex-col mt-30 text-5xl items-center justify-center w-full">
