@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLine } from "react-icons/fa";
-import { use, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Nav = () => {
