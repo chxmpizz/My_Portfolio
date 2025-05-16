@@ -14,11 +14,11 @@ import { SiMongodb } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col text-5xl items-center justify-center">
+    <div className="flex flex-col text-5xl items-center justify-center mb-10">
       <h1 className="text-5xl font-bold">
         Skills
       </h1> 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 mt-10 lg:w-[50%] overflow-hidden">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-10 lg:w-[50%] overflow-hidden py-5">
          <div 
       
           className="bg-gray-100 rounded-2xl shadow-lg text-[#ff5733] 

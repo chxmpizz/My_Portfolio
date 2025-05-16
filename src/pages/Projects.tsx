@@ -2,7 +2,7 @@ import MERN_AI from "../assets/MERN_AI.png"
 import ToDoList from "../assets/ToDoList.png"
 const Projects = () => {
   return (
-    <div className="flex flex-col my-30 text-5xl items-center justify-center w-full overflow-hidden">
+    <div className="flex flex-col my-10 text-5xl items-center justify-center w-full overflow-hidden">
       <h1 className="text-5xl font-bold">
         Projects
       </h1> 
