@@ -1,13 +1,17 @@
 import Intern from '../assets/intern1.jpg'
 const Home = () => {
   return (
-    <div className='flex flex-row items-center h-screen justify-around'>
-      <img src={Intern} alt="intern" className='w-80 rounded-2xl '/>
-      <div className='flex flex-col justify-center items-center w-[50%]'>
-            <h1 className='text-4xl font-bold text-center'>
+    <div className='flex items-center lg:justify-around min-h-screen  
+    lg:flex-row 
+    md:justify-around 
+    sm:flex-col sm:my-10 sm:mx-6 sm:justify-around
+    max-sm:my-20 max-sm:mx-5 max-sm:flex-col max-sm:justify-around '>
+      <img src={Intern} alt="intern" className='mt-10 lg:w-90 rounded-2xl md:w-70 sm:w-60 max-sm:w-65'/>
+      <div className='flex flex-col justify-center items-center mt-5 md:w-[80%] lg:w-[50%] sm:w-[90%]'>
+            <h1 className='text-3xl font-bold text-center'>
               Hello , I'm Rattasat Onnomdee 
             </h1>
-              <p className='text-2xl font-semibold text-center mt-10'>
+              <p className='text-2xl font-semibold text-center mt-10 max-sm:text-md'>
                 I'm a software engineer with a passion for Developing a Full Stack Web Application.
                 I specialize Technologies such as React.JS, Next.JS, Node.JS, Express.JS, and MongoDB,
                 also I can use Tailwind CSS ,ShadCN/UI and Magic UI for UI design.
