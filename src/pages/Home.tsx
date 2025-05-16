@@ -8,7 +8,7 @@ const Home = () => {
     max-sm:my-20 max-sm:mx-5 max-sm:flex-col max-sm:justify-around '>
       <img src={Intern} alt="intern" className='mt-10 lg:w-90 rounded-2xl md:w-70 sm:w-60 max-sm:w-65'/>
       <div className='flex flex-col justify-center items-center mt-5 md:w-[80%] lg:w-[50%] sm:w-[90%]'>
-            <h1 className='text-3xl font-bold text-center'>
+            <h1 className='text-3xl font-bold text-center max:sm:text-xl'>
               Hello , I'm Rattasat Onnomdee 
             </h1>
               <p className='text-2xl font-semibold text-center mt-10 max-sm:text-md'>
