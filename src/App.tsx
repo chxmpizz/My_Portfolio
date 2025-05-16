@@ -8,8 +8,10 @@ import './App.css';
 const App = () => {
   return (
     <div>
-      <NavBar/>
       <div>
+        <NavBar/>
+      </div>
+      <div className='mt-20'>
         <Home />
         <Skills />
         <Projects />

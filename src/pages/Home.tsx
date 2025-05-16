@@ -1,7 +1,7 @@
 import Intern from '../assets/intern1.jpg'
 const Home = () => {
   return (
-    <div className='flex items-center lg:justify-around h-screen sm:my-10 mx-6 
+    <div className='flex items-center lg:justify-around h-full sm:my-10 mx-6 
     lg:flex-row 
     md:justify-around 
     sm:flex-col sm:justify-around
