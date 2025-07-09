@@ -28,7 +28,7 @@ const Nav = () => {
     setToggle(!toggle);
   };
   const resumeDownload = () => {
-    saveAs('/src/assets/Resume.pdf' , 'resume.pdf');
+    saveAs('/Resume.pdf' , 'resume.pdf');
   };
 
   return (
@@ -100,8 +100,8 @@ const Nav = () => {
             className="mx-1"
             src={
               scrolled
-                ? `/src/assets/download.svg`
-                : `/src/assets/download-white.svg`
+                ? `/download.svg`
+                : `/downloadWhite.svg`
             }
             alt="download"
           />
