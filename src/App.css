@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+.outlined-text {
+  color: white;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+}

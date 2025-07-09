@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="mt-15 text-5xl flex flex-col items-center justify-center w-full h-[100%] overflow-hidden">
+    <section id="contact" className="mt-15 text-5xl flex flex-col items-center justify-center w-full h-[100%] overflow-hidden">
       <h1 className="text-5xl font-bold">
         Contact
       </h1>
@@ -16,7 +16,7 @@ const Contact = () => {
               063-527-8329
             </p>
           </div>
-    </div>
+    </section>
   )
 }
 

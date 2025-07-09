@@ -3,13 +3,14 @@ import ToDoList from "../assets/ToDoList.png"
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Projects = () => {
+  
   return (
-    <div className="flex flex-col my-10 text-5xl items-center justify-center w-full overflow-hidden">
+    <section id="projects" className="flex h-full flex-col pt-25 text-5xl items-center justify-center w-full">
       <h1 className="text-5xl font-bold">
         Projects
       </h1> 
        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto px-10 mt-10">
-          <div className="flex flex-col items-center justify-center border-3 rounded-2xl px-1 py-5 mb-10 w-[100%] h-full">
+          <div className="flex flex-col items-center justify-center border-3 rounded-2xl px-1 py-5 mb-10 w-[100%]">
             <img src={MERN_AI} alt="MERN AI" className="w-[80%] rounded-2xl shadow-lg mb-5 max-sm:w-[90%]"/>
             <h1 className="text-xl font-bold text-center">Generate Image AI Web Application</h1>
             <p className="text-lg font-semibold text-center mt-5 w-[70%]">
@@ -26,7 +27,7 @@ const Projects = () => {
                 Repository Link
               </motion.a>
           </div>
-          <div className="flex flex-col items-center justify-center border-3 rounded-2xl px-1 py-5 mb-10 w-[100%] h-full">
+          <div className="flex flex-col items-center justify-center border-3 rounded-2xl px-1 py-5 mb-10 w-[100%]">
             <img src={ToDoList} alt="ToDoList" className="w-[80%] rounded-2xl shadow-lg mb-5 max-sm:w-[90%]"/>
             <h1 className="text-xl font-bold text-center">ToDoList Web Application(Developing)</h1>
             <p className="text-lg font-semibold text-center mt-5 w-[70%]">
@@ -43,7 +44,7 @@ const Projects = () => {
               </motion.a>
           </div>
       </div>
-    </div>
+    </section>
   )
 }
 
