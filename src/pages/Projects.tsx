@@ -1,51 +1,103 @@
-import MERN_AI from "../assets/MERN_AI.png"
-import ToDoList from "../assets/ToDoList.png"
+import ShareRecipe from "../assets/ShareRecipe.png";
+import Eduai from "../assets/Eduai_Home.png";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Projects = () => {
-  
   return (
-    <section id="projects" className="flex h-full flex-col pt-25 text-5xl items-center justify-center w-full">
-      <h1 className="text-5xl font-bold">
-        Projects
-      </h1> 
-       <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto px-10 mt-10">
-          <div className="flex flex-col items-center justify-center border-3 rounded-2xl px-1 py-5 mb-10 w-[100%]">
-            <img src={MERN_AI} alt="MERN AI" className="w-[80%] rounded-2xl shadow-lg mb-5 max-sm:w-[90%]"/>
-            <h1 className="text-xl font-bold text-center">Generate Image AI Web Application</h1>
-            <p className="text-lg font-semibold text-center mt-5 w-[70%]">
-              A Generate Image AI Web Application Project using The MERN Stack such as React.js with TailwindCSS for User Interface 
-              and Node.js , Express.js for Backend and MongoDB for database management. This project is a web application that allows users to generate images using AI.
-              Tha Web uses OpenAI API to generate based on the text prompt provided by the user. 
-            </p>
-              <motion.a 
-              whileHover={{background: "#e7e7e7" ,width : "200px",height: "35px" ,scale: 1.1,borderRadius: "10px"}}
-              transition={{duration: 0.2}} 
-              href="https://github.com/champNewbie/IMAGE_GEN_MERN" 
-              className="flex flex-row justify-center items-center cursor-pointer mt-5 text-xl">
-                <FaGithub className="mr-1 text-2xl"/> 
-                Repository Link
-              </motion.a>
-          </div>
-          <div className="flex flex-col items-center justify-center border-3 rounded-2xl px-1 py-5 mb-10 w-[100%]">
-            <img src={ToDoList} alt="ToDoList" className="w-[80%] rounded-2xl shadow-lg mb-5 max-sm:w-[90%]"/>
-            <h1 className="text-xl font-bold text-center">ToDoList Web Application(Developing)</h1>
-            <p className="text-lg font-semibold text-center mt-5 w-[70%]">
-              The To Do List Web Application Project using Next.js(Typescript) and TailwindCSS for User Interfaces, ShadCN/UI for UI components
-              The Backend using Node.js , Express.js and PostgreSQL for database management Prisma for ORM interacting with database. This project is a web application that allows users to create, read, update, and delete tasks.
-            </p>
-              <motion.a 
-              whileHover={{background: "#e7e7e7" ,width : "200px",height: "35px" ,scale: 1.1 , borderRadius: "10px"}}
-              transition={{duration: 0.2}}
-              href="https://github.com/champNewbie/ToDo_List" 
-              className="flex flex-row justify-center items-center cursor-pointer mt-5 text-xl">
-                <FaGithub className="mr-1 text-2xl"/> 
-                Repository Link
-              </motion.a>
-          </div>
+    <section
+      id="projects"
+      className="flex h-full flex-col pt-25 text-5xl items-center justify-center w-full bg-black text-white"
+    >
+      <motion.h1
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 100 }}
+        transition={{ duration: 1 }}
+        className="text-5xl font-normal"
+      >
+        My <span className="font-bold">Projects</span>
+      </motion.h1>
+
+      <div className="grid grid-cols-1 gap-10 w-full">
+        <div className="flex w-auto justify-around items-center mx-auto my-10">
+          <motion.img
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 100 }}
+            transition={{ duration: 1 }}
+            src={ShareRecipe}
+            alt="ShareRecipe"
+            width={500}
+            height={500}
+            className="rounded-lg"
+          />
+          <motion.div
+            initial={{ x: 120, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 100 }}
+            transition={{ duration: 1.5 }}
+            className="w-1/2"
+          >
+            <div className="items-start flex flex-col">
+              <h2 className="text-3xl">ShareRecipe</h2>
+              <p className="text-[21px] font-normal my-5 leading-8">
+                A Simple Web Application that create Your own Recipe and save on
+                to your all Recipe Using NextJS for build UI for Frontend with
+                ShadCN and route API for Backend via App route and Database
+                management by PostgreSQL with Prisma ORM.
+              </p>
+            </div>
+            <button className="border-2 rounded-lg p-2 cursor-pointer">
+              <a
+                href="https://github.com/champNewbie/Share-Recipes"
+                className="text-3xl"
+              >
+                <FaGithub />
+              </a>
+            </button>
+          </motion.div>
+        </div>
+
+        <div className="flex flex-row-reverse w-auto justify-around items-center mx-auto my-10">
+          <motion.img
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 100 }}
+            transition={{ duration: 1 }}
+            src={Eduai}
+            alt="Eduai"
+            width={500}
+            height={500}
+            className="rounded-lg"
+          />
+          <motion.div
+            initial={{ x: -120, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 100 }}
+            transition={{ duration: 1.5 }}
+            className="w-1/2"
+          >
+            <div className="items-start flex flex-col">
+              <h2 className="text-3xl">Eduai</h2>
+              <p className="text-[21px] font-normal ">
+                <p className="text-[21px] font-normal my-5 leading-8">
+                  A Web Application that gather Course All Category and AI Agent
+                  that help you conclude you lesson course for your more
+                  understanding. using NextJS for Frontend with ShadCN ,
+                  authenticate With Clerk a Third party Auth , NestJS for
+                  Backend API server route ,Database management by PostgreSQL
+                  with Prisma ORM.
+                </p>
+              </p>
+            </div>
+            <button className="border-2 rounded-lg p-2 cursor-pointer">
+              <a
+                href="https://github.com/champNewbie/Eduai"
+                className="text-3xl"
+              >
+                <FaGithub />
+              </a>
+            </button>
+          </motion.div>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

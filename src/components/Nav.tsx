@@ -1,6 +1,6 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import saveAs from 'file-saver'
+import saveAs from "file-saver";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Nav = () => {
@@ -28,19 +28,17 @@ const Nav = () => {
     setToggle(!toggle);
   };
   const resumeDownload = () => {
-    saveAs('/Resume.pdf' , 'resume.pdf');
+    saveAs("/Resume.pdf", "resume.pdf");
   };
 
   return (
     <motion.div
-    initial={{y:-50,opacity:0}}
-    whileInView={{y:0 , opacity:100}}
-    transition={{duration : 0.8}}
-      className={`fixed 
-    max-sm:w-[100%] max-sm: lg:w-full top-0 left-0 right-0  z-10 ${
-      scrolled
-        ? "bg-black text-white duration-300"
-        : "text-black bg-white duration-300"
+      initial={{ y: -50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 100 }}
+      transition={{ duration: 0.8 }}
+      className={`fixed z-99
+    max-sm:w-[100%] max-sm: lg:w-full top-0 left-0 right-0 ${
+      scrolled ? "bg-black text-white shadow-lg shadow-red-500/30" : "bg-white text-black shadow-lg shadow-blue-500/30"
     }`}
     >
       <nav className="flex justify-around items-center p-4">
@@ -61,10 +59,20 @@ const Nav = () => {
             className="pr-10"
             onClick={() => window.scrollTo(0, 0)}
           >
+            <a href="#experiences" className="cursor-pointer scroll-auto">
+              <p>Experiences</p>
+            </a>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="pr-10"
+            onClick={() => window.scrollTo(0, 0)}
+          >
             <a href="#skills" className="cursor-pointer scroll-auto">
               <p>Skills</p>
             </a>
           </motion.div>
+
           <motion.div
             whileHover={{ scale: 1.1 }}
             className="pr-10"
@@ -72,15 +80,6 @@ const Nav = () => {
           >
             <a href="#projects" className="cursor-pointer scroll-auto">
               <p>Projects</p>
-            </a>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="pr-10"
-            onClick={() => window.scrollTo(0, 0)}
-          >
-            <a href="#contact" className="cursor-pointer scroll-auto">
-              <p>Contact</p>
             </a>
           </motion.div>
         </div>
@@ -98,11 +97,7 @@ const Nav = () => {
           <motion.img
             variants={imgVariants}
             className="mx-1"
-            src={
-              scrolled
-                ? `/download.svg`
-                : `/downloadWhite.svg`
-            }
+            src={scrolled ? `/download.svg` : `/downloadWhite.svg`}
             alt="download"
           />
         </motion.button>
@@ -111,10 +106,7 @@ const Nav = () => {
           <RxHamburgerMenu className="text-3xl" />
         </button>
       </nav>
-      <AnimatePresence>
-        {/* {toggle ? (
-          < */}
-      </AnimatePresence>
+
     </motion.div>
   );
 };

@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <section
-      id="home"
-      className="py-20 flex items-center lg:justify-around h-full sm:my-10 mx-6 
+    id="home"
+    className="py-20 flex items-center lg:justify-around h-full sm:my-10 mx-6 
     lg:flex-row 
     md:justify-around 
-    sm:flex-col sm:justify-around
+    sm:flex-col sm:justify-around w-auto
     max-sm:my-20 max-sm:mx-5 max-sm:flex-col max-sm:justify-around "
     >
       <div className="flex flex-col justify-center items-center mt-5 md:w-[80%] lg:w-[50%] sm:w-[90%]">
@@ -36,9 +36,10 @@ const Home = () => {
           <span className="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent">
             Champ
           </span>{" "}
-          , I study in Thammasat University with computer science degree I'm
-          interested in programming such as Web Development , Mobile Application
-          , Data Science (ML/DL) and{" "}
+          , I study in Thammasat University with Faculty of Science and
+          Technology Department of Computer Science. I'm interested in
+          programming such as Web Development , Mobile Application , Data
+          Science (ML/DL) and{" "}
           <span className="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent">
             Nice to meet you everyone
           </span>{" "}
@@ -97,7 +98,7 @@ const Home = () => {
         </motion.div>
       </div>
       <motion.img
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ duration: 1.1 }}
         src={Intern}

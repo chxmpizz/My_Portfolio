@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex h-full py-15 flex-col text-5xl items-center justify-center "
+      className="flex h-full pt-25 pb-15 flex-col text-5xl items-center justify-center "
     >
       <motion.h1 
       initial={{y:-50}}
@@ -29,7 +29,7 @@ const Skills = () => {
       className="text-5xl font-normal">
         My <span className="font-extrabold">Skills</span>
       </motion.h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10  w-auto overflow-hidden py-18">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10  w-auto overflow-hidden pt-15 pb-18">
         <motion.div
           initial={{ y: 50 }}
           whileHover={{
