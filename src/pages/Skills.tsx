@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex h-full pt-27 pb-18 flex-col text-5xl items-center justify-center "
+      className="flex h-full pt-27 pb-22 flex-col text-5xl items-center justify-center "
     >
       <motion.h1 
       initial={{y:-50}}
