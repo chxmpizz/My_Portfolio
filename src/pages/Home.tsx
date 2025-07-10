@@ -67,7 +67,7 @@ const Home = () => {
             className="mr-4 border-2 py-2 px-3 rounded-md cursor-pointer"
           >
             <a
-              href="https://github.com/champNewbie"
+              href="https://github.com/chxmpizz"
               className="flex flex-row justify-center gap-2 items-center "
             >
               <FaGithub className=" text-3xl" />
