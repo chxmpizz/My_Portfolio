@@ -36,7 +36,7 @@ const Nav = () => {
       initial={{ y: -50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 100 }}
       transition={{ duration: 0.8 }}
-      className={`fixed z-99
+      className={`fixed z-99 duration-300
     max-sm:w-[100%] max-sm: lg:w-full top-0 left-0 right-0 ${
       scrolled ? "bg-black text-white shadow-lg shadow-red-500/30" : "bg-white text-black shadow-lg shadow-blue-500/30"
     }`}
