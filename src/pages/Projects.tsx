@@ -73,7 +73,7 @@ const Projects = () => {
             className="w-1/2"
           >
             <div className="items-start flex flex-col">
-              <h2 className="text-3xl">Eduai</h2>
+              <h2 className="text-3xl">Eduai (Developing)</h2>
               <p className="text-[21px] font-normal ">
                 <p className="text-[21px] font-normal my-5 leading-8">
                   A Web Application that gather Course All Category and AI Agent
@@ -81,7 +81,7 @@ const Projects = () => {
                   understanding. using NextJS for Frontend with ShadCN ,
                   authenticate With Clerk a Third party Auth , NestJS for
                   Backend API server route ,Database management by PostgreSQL
-                  with Prisma ORM.
+                  with Prisma ORM and AI Model with OpenAI.
                 </p>
               </p>
             </div>
