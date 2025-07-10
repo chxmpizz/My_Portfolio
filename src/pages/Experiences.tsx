@@ -1,4 +1,5 @@
 import {motion } from 'framer-motion'
+import MeeSolution from "../assets/mee-solution.png";
 
 const Experiences = () => {
   return (
@@ -21,7 +22,7 @@ const Experiences = () => {
         <div className=" flex justify-between items-center w-full">
           <div className="flex items-center">
             <img
-              src="src/assets/mee-solution.png"
+              src={MeeSolution}
               alt="mee-solution"
               width={60}
               height={60}
