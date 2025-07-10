@@ -38,7 +38,7 @@ const Experiences = () => {
                   <a href='https://meesolution.com/' 
                   className="
                   text-3xl bg-gradient-to-r from-[#61A2C6] via-[#263B6D] to-[#EF8673] bg-clip-text text-transparent">
-                    Mee Solution Consulting
+                    Mee Solution Consulting Co. Ltd.
                   </a>
                 </div>
               </motion.div>
