@@ -11,7 +11,7 @@ const Home = () => {
     className="max-md:py-0 flex items-center lg:justify-around h-screen max-md:h-full mx-6 
     lg:flex-row 
     w-auto
-    max-md:my-20 max-md:mx-5 max-lg:flex-col-reverse "
+    max-md:my-0 max-md:mx-5 max-lg:flex-col-reverse "
     >
       <div className="flex flex-col justify-center items-center mt-5 md:w-[80%] lg:w-[50%] sm:w-[90%]">
         <motion.h1
