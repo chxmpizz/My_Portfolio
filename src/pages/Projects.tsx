@@ -18,7 +18,7 @@ const Projects = () => {
       </motion.h1>
 
       <div className="grid grid-cols-1 gap-10 w-full">
-        <div className="flex w-auto justify-around items-center mx-auto my-10">
+        <div className="flex w-auto justify-around items-center max-lg:flex-col mx-auto my-10">
           <motion.img
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 100 }}
@@ -27,17 +27,17 @@ const Projects = () => {
             alt="ShareRecipe"
             width={500}
             height={500}
-            className="rounded-lg"
+            className="rounded-lg max-md:px-4"
           />
           <motion.div
             initial={{ x: 120, opacity: 0 }}
             whileInView={{ x: 0, opacity: 100 }}
             transition={{ duration: 1.5 }}
-            className="w-1/2"
+            className="w-1/2 max-lg:w-8/9"
           >
-            <div className="items-start flex flex-col">
+            <div className="items-start flex flex-col max-md:w-auto max-lg:mt-6">
               <h2 className="text-3xl">ShareRecipe</h2>
-              <p className="text-[21px] font-normal my-5 leading-8">
+              <p className="text-lg font-normal my-5 leading-8">
                 A Simple Web Application that create Your own Recipe and save on
                 to your all Recipe Using NextJS for build UI for Frontend with
                 ShadCN and route API for Backend via App route and Database
@@ -55,7 +55,7 @@ const Projects = () => {
           </motion.div>
         </div>
 
-        <div className="flex flex-row-reverse w-auto justify-around items-center mx-auto my-10">
+        <div className="flex flex-row-reverse w-auto max-lg:flex-col justify-around items-center mx-auto my-10">
           <motion.img
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 100 }}
@@ -64,18 +64,18 @@ const Projects = () => {
             alt="Eduai"
             width={500}
             height={500}
-            className="rounded-lg"
+            className="rounded-lg max-md:px-4"
           />
           <motion.div
             initial={{ x: -120, opacity: 0 }}
             whileInView={{ x: 0, opacity: 100 }}
             transition={{ duration: 1.5 }}
-            className="w-1/2"
+            className="w-1/2 max-lg:w-8/9"
           >
-            <div className="items-start flex flex-col">
+            <div className="items-start max-md:justify-center flex max-md:w-auto max-lg:mt-6 flex-col">
               <h2 className="text-3xl">Eduai (Developing)</h2>
               <p className="text-[21px] font-normal ">
-                <p className="text-[21px] font-normal my-5 leading-8">
+                <p className="text-lg font-normal my-5 leading-8">
                   A Web Application that gather Course All Category and AI Agent
                   that help you conclude you lesson course for your more
                   understanding. using NextJS for Frontend with ShadCN ,

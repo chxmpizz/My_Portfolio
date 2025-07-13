@@ -6,13 +6,13 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="pt-20 text-5xl flex flex-col items-center justify-center w-full  overflow-hidden"
+      className="pt-15 text-5xl flex flex-col items-center justify-center w-full  overflow-hidden"
     >
       <motion.h1
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ duration: 1 }}
-        className="text-5xl font-bold"
+        className="text-5xl max-md:text-3xl font-bold"
       >
         Let's Contact Me!
       </motion.h1>
@@ -21,7 +21,7 @@ const Contact = () => {
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 100 }}
         transition={{ duration: 1 }}
-        className="mt-4 text-lg"
+        className="mt-4 max-md:text-sm text-center text-lg"
       >
         Ready to work with your company and build a Excellent Products.
       </motion.p>
@@ -29,7 +29,7 @@ const Contact = () => {
         initial={{ x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 100 }}
         transition={{ duration: 1 }}
-        className="px-5 py-8 border-t-1 flex lg:flex-row items-center justify-between w-5/6 mt-10 max-sm:flex-col max-sm:gap-5 max-sm:items-center sm:flex-col sm:gap-5 sm:items-center"
+        className="px-5 py-8 border-t-1 flex lg:flex-row items-center justify-between w-5/6 mt-5 max-sm:flex-col max-sm:gap-5 max-sm:items-center sm:flex-col sm:gap-5 sm:items-center"
       >
         <motion.p
           initial={{ x: -100, opacity: 0 }}

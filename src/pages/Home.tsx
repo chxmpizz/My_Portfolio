@@ -8,18 +8,17 @@ const Home = () => {
   return (
     <section
     id="home"
-    className="py-20 flex items-center lg:justify-around h-full sm:my-10 mx-6 
+    className="max-md:py-0 flex items-center lg:justify-around h-screen max-md:h-full mx-6 
     lg:flex-row 
-    md:justify-around 
-    sm:flex-col sm:justify-around w-auto
-    max-sm:my-20 max-sm:mx-5 max-sm:flex-col max-sm:justify-around "
+    w-auto
+    max-md:my-20 max-md:mx-5 max-lg:flex-col-reverse "
     >
       <div className="flex flex-col justify-center items-center mt-5 md:w-[80%] lg:w-[50%] sm:w-[90%]">
         <motion.h1
           initial={{ x: -150, opacity: 0 }}
           whileInView={{ x: 0, opacity: 100 }}
           transition={{ duration: 1.3 }}
-          className="text-4xl font-normal text-start leading-snug max:sm:text-xl"
+          className="text-4xl font-normal text-start max-lg:text-center leading-snug max:sm:text-xl"
         >
           Hello , I'm
           <span className="font-extrabold"> Rattasat Onnomdee </span>
@@ -30,7 +29,7 @@ const Home = () => {
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 100 }}
           transition={{ duration: 1.5 }}
-          className="text-xl font-normal leading-9 text-start mt-5 max-sm:text-md"
+          className="text-xl font-normal max-lg:text-center leading-9 text-start mt-5 max-sm:text-md"
         >
           You can call me{" "}
           <span className="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent">
@@ -49,7 +48,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.8 }}
-          className="flex justify-start my-5 items-center w-full"
+          className="flex justify-start max-lg:justify-center my-5 items-center w-full"
         >
           <motion.div
             whileHover={{ color: "#1778F2" }}
@@ -98,12 +97,12 @@ const Home = () => {
         </motion.div>
       </div>
       <motion.img
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ duration: 1.1 }}
         src={Intern}
         alt="intern"
-        className="mt-10 lg:w-90 rounded-2xl md:w-70 sm:w-60 max-sm:w-65"
+        className="mt-10 rounded-2xl md:w-70 sm:w-60 max-sm:w-65"
       />
     </section>
   );
