@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section
     id="home"
-    className="max-md:py-0 flex items-center lg:justify-around h-screen max-md:h-full mx-6 
+    className="max-md:py-0 flex items-center lg:justify-around lg:h-screen max-md:h-full mx-6 
     lg:flex-row 
     w-auto
     max-md:my-0 max-md:mx-5 max-lg:flex-col-reverse "

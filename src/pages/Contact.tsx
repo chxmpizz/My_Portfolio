@@ -21,7 +21,7 @@ const Contact = () => {
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 100 }}
         transition={{ duration: 1 }}
-        className="mt-4 max-md:text-sm text-center text-lg"
+        className="mt-4 max-md:text-sm text-center text-lg px-2"
       >
         Ready to work with your company and build a Excellent Products.
       </motion.p>
